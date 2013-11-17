@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/build.js"></script>
+    <script>
+      var getUserMedia = require('get-user-media');
+      var AudioContext = window.AudioContext || window.webkitAudioContext;
+      
+      var ctx = new AudioContext();
+      
+      getUserMedia({ video: true }, function(err, stream) {
+        if (err) throw err;
+        
+        var video = document.querySelector('video');
+        video.src = URL.createObjectURL(stream);
+      });
+    </script>
+  </head>
+  <body>
+    <video autoplay></video>
+  </body>
+</html>

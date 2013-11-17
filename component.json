@@ -1,0 +1,14 @@
+{
+  "name": "get-user-media",
+  "repo": "juliangruber/get-user-media",
+  "description": "Cross browser navigator.getUserMedia with a node api",
+  "version": "0.0.0",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
